@@ -10,8 +10,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaBootstrap,
-  FaGitAlt,
-  FaDatabase,
+  FaGitAlt
 } from "react-icons/fa";
 
 import { VscVscode } from "react-icons/vsc";
@@ -748,4 +747,5 @@ export default function Portfolio() {
       `}</style>
     </div>
   );
+
 }
