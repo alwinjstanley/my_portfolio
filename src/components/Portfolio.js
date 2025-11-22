@@ -194,12 +194,9 @@ export default function Portfolio() {
   animate={{ opacity: 1 }}
   transition={{ delay: 0.2 }}
 >
-  <h3 className="border-start border-4 ps-3 mb-3 text-primary">Objective</h3>
+  <h3 className="border-start border-4 ps-3 mb-3 text-primary">Introduction</h3>
   <p className="text-light">
-    Motivated Python Full Stack Developer skilled in React and Django, with
-    hands-on experience in building responsive, secure, and scalable web
-    applications. Passionate about solving real-world problems through clean
-    code, teamwork, and continuous learning.
+    Hi, I’m Alwin Stanley — a motivated Python Full Stack Developer skilled in React and Django, with hands-on experience building responsive, secure, and scalable web applications. I’m passionate about solving real-world problems through clean code, strong logic, and continuous learning. I love creating user-focused, efficient solutions and enjoy working in collaborative environments where ideas can grow into meaningful products.
   </p>
 </motion.div>
 
@@ -319,7 +316,7 @@ export default function Portfolio() {
           </Card.Subtitle>
           <Card.Text>
             Designed and maintained client websites using HTML, CSS, and
-            JavaScript. Improved UI performance and SEO while collaborating
+            JavaScript, React. Improved UI performance and SEO while collaborating
             with small teams.
           </Card.Text>
         </Card.Body>
@@ -440,6 +437,55 @@ export default function Portfolio() {
   `}</style>
 </motion.div>
 
+{/* Career Summary */}
+<motion.div
+  id="summary"
+  className="mb-5"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.15 }}
+>
+  <h3 className="border-start border-4 ps-3 mb-3 text-primary">
+    Career Summary
+  </h3>
+
+  <p className="text-light">
+    After my graduation, I spent a few years preparing for the 
+    <strong> UPSC Civil Services Examination</strong>, one of the toughest 
+    competitive exams in the world. This journey strengthened my analytical 
+    skills, sharpened my ability to learn quickly, and taught me how to stay 
+    focused and disciplined under pressure. As the popular saying about UPSC 
+    aspirants goes — <em>“A jack of all trades, master of none,”</em> — those 
+    years gave me broad knowledge and the ability to approach problems from 
+    multiple perspectives.
+  </p>
+
+  <p className="text-light">
+    Alongside my preparation, I worked as a <strong>freelance musician </strong>  
+     and contributed to our <strong>family business</strong>, gaining practical 
+    experience in communication, teamwork, leadership, and day-to-day 
+    operations. These roles helped shape my creativity and real-world 
+    understanding of how people and systems work.
+  </p>
+
+  <p className="text-light">
+    My interest in technology began in school, where I first explored 
+    programming and became fascinated by how code could bring ideas to life. 
+    Even during graduation, I stayed connected to programming through small 
+    experiments and online learning. That curiosity eventually grew into a 
+    clear direction and guided my transition into <strong>full stack 
+    development</strong>.
+  </p>
+
+  <p className="text-light">
+    Today, I focus on building clean, functional, and scalable applications 
+    using modern technologies. I enjoy combining creativity with logic — 
+    whether it’s crafting intuitive user interfaces or developing efficient 
+    backend architectures. I’m constantly learning, improving, and working on 
+    projects that reflect my passion for problem-solving and meaningful, 
+    user-centric development.
+  </p>
+</motion.div>
 
 
         {/* Education */}
@@ -672,7 +718,8 @@ export default function Portfolio() {
           <Row className="gy-2 justify-content-center">
             {[
               "Information Technology",
-              "Research",
+              "Web Development",
+              "Academic Research",
               "Social Media Management",
               "Content Writing",
               "Video Editing",
@@ -737,14 +784,30 @@ export default function Portfolio() {
       </Container>
 
       <style>{`
-        .hover-zoom {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .hover-zoom:hover {
-          transform: translateY(-5px) scale(1.02);
-          box-shadow: 0 12px 25px rgba(13, 110, 253, 0.3);
-        }
-      `}</style>
+  .hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-zoom:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(13, 110, 253, 0.3);
+  }
+
+  /* ⭐ Custom Futuristic Scrollbar ⭐ */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d1117;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #6610f2, #0d6efd);
+  }
+`}</style>
+
     </div>
   );
 
