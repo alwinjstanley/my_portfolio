@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar as RBNavbar, Nav, Container } from "react-bootstrap";
 import { FaCode } from "react-icons/fa"; // Developer icon
 
 export default function NavBarComponent() {
+  
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <RBNavbar
       expand="lg"
       fixed="top"
+      expanded={expanded}
       style={{
         background: "rgba(0, 0, 0, 0.35)",
         backdropFilter: "blur(12px)",
@@ -16,7 +20,8 @@ export default function NavBarComponent() {
       }}
     >
       <Container>
-        {/* Brand / Logo */}
+        
+        {/* Brand */}
         <RBNavbar.Brand
           href="#home"
           className="fw-bold"
@@ -30,19 +35,19 @@ export default function NavBarComponent() {
             gap: "10px",
           }}
         >
-          <FaCode size={22} /> {/* Developer icon */}
-        Alwin's Portfolio
+          <FaCode size={22} />
+          Alwin's Portfolio
         </RBNavbar.Brand>
 
-        {/* Hamburger with dark theme */}
+        {/* Hamburger */}
         <RBNavbar.Toggle
           aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : true)}
           style={{
             border: "none",
             outline: "none",
           }}
         >
-          {/* Custom hamburger icon */}
           <span
             style={{
               display: "block",
@@ -77,12 +82,13 @@ export default function NavBarComponent() {
 
         <RBNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{ gap: "15px" }}>
+
             {[
               { id: "home", label: "Home" },
-              { id: "objective", label: "Objective" },
               { id: "skills", label: "Skills" },
-              { id: "experience", label: "Experience" },
+              { id: "experience", label: "Experiences" },
               { id: "projects", label: "Projects" },
+              { id: "summary", label: "Summary" },
               { id: "education", label: "Education" },
               { id: "certifications", label: "Certifications" },
             ].map((item) => (
@@ -90,6 +96,7 @@ export default function NavBarComponent() {
                 key={item.id}
                 href={`#${item.id}`}
                 className="text-light nav-link-custom"
+                onClick={() => setExpanded(false)}   // 👈 CLOSE NAVBAR ON CLICK
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: "0.95rem",
@@ -99,6 +106,7 @@ export default function NavBarComponent() {
                 {item.label}
               </Nav.Link>
             ))}
+
           </Nav>
         </RBNavbar.Collapse>
       </Container>
@@ -119,7 +127,6 @@ export default function NavBarComponent() {
           font-weight: 600;
         }
 
-        /* Make hamburger lines animate on hover */
         .navbar-toggler:hover span {
           background-color: #6610f2;
           transform: scaleX(1.15);
@@ -128,4 +135,6 @@ export default function NavBarComponent() {
     </RBNavbar>
   );
 }
+
+
 
