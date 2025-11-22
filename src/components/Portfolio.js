@@ -288,8 +288,8 @@ export default function Portfolio() {
             Nov 2024 – Present
           </Card.Subtitle>
           <Card.Text>
-            Trained in HTML, CSS, Bootstrap, JavaScript, React, Python,
-            Django, and MySQL. Developed full-stack applications with JWT
+            Worked using JavaScript, React, Python,
+            Django, MySQL, HTML, CSS and Bootstrap. Developed full-stack applications with JWT
             authentication and REST APIs.
           </Card.Text>
         </Card.Body>
@@ -450,7 +450,7 @@ export default function Portfolio() {
   </h3>
 
   <p className="text-light">
-    After my graduation, I spent a few years preparing for the 
+    After my graduation, I dedicated time preparing for the 
     <strong> UPSC Civil Services Examination</strong>, one of the toughest 
     competitive exams in the world. This journey strengthened my analytical 
     skills, sharpened my ability to learn quickly, and taught me how to stay 
@@ -812,3 +812,4 @@ export default function Portfolio() {
   );
 
 }
+
