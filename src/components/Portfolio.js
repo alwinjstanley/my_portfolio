@@ -315,8 +315,8 @@ export default function Portfolio() {
             Sept 2023 – Nov 2024
           </Card.Subtitle>
           <Card.Text>
-            Designed and maintained client websites using HTML, CSS, and
-            JavaScript, React. Improved UI performance and SEO while collaborating
+            Designed and maintained client websites using HTML, CSS,
+            JavaScript, and React. Improved UI performance and SEO while collaborating
             with small teams.
           </Card.Text>
         </Card.Body>
@@ -572,7 +572,7 @@ export default function Portfolio() {
             Infant Jesus EMS, Kozhikode
           </Card.Subtitle>
           <Card.Text>
-            Aggregate: <strong>90%</strong>
+            Aggregate: <strong>95%</strong>
           </Card.Text>
         </Card.Body>
       </Card>
@@ -601,6 +601,10 @@ export default function Portfolio() {
       {
         title: "Python Full Stack Development Certificate",
         desc: "Techolas Technologies, Kochi",
+      },
+      {
+        title: "National Council for Technology and Training (NACTET)",
+        desc: "Python Full Stack Development",
       },
       {
         title: "Business English Certificate (BEC)",
@@ -812,4 +816,5 @@ export default function Portfolio() {
   );
 
 }
+
 
