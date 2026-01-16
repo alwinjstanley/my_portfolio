@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Container, Row, Col, Card, Badge, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaYoutube } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiNetlify, SiRender, SiVercel, SiNginx } from "react-icons/si";
+import { FaGlobe } from "react-icons/fa";
+
+
 
 import {
   FaPython,
@@ -150,16 +155,14 @@ export default function Portfolio() {
     />
     <h1 className="fw-bold text-primary">Alwin Joseph Stanley</h1>
 
-    <p className="fs-5 text-light">
-      Python Full Stack Developer | React | Django | MySQL
-    </p>
 
-    <p className="text-light">
-      <FaEnvelope className="me-2" /> alwinstanley1@gmail.com |{" "}
-      <FaPhone className="mx-2" /> +91 96459 64088
-    </p>
+<p className="text-light mt-2">
+  Python Full Stack Developer | React | Django | MySQL | REST APIs | JWT | Cloud Deployment
+</p>
 
-    <div className="d-flex justify-content-center gap-3 mt-3">
+
+
+<div className="d-flex justify-content-center gap-3 mt-3">
       <Button
         style={{
           background: "linear-gradient(45deg, #0d6efd, #6610f2)",
@@ -182,6 +185,8 @@ export default function Portfolio() {
         <FaGithub className="me-2" /> GitHub
       </Button>
     </div>
+
+    
   </motion.div>
 </section>
 
@@ -196,8 +201,20 @@ export default function Portfolio() {
 >
   <h3 className="border-start border-4 ps-3 mb-3 text-primary">Introduction</h3>
   <p className="text-light">
-    Hi, I’m Alwin Stanley — a motivated Python Full Stack Developer skilled in React and Django, with hands-on experience building responsive, secure, and scalable web applications. I’m passionate about solving real-world problems through clean code, strong logic, and continuous learning. I love creating user-focused, efficient solutions and enjoy working in collaborative environments where ideas can grow into meaningful products.
-  </p>
+  I’m a Python Full Stack Developer specializing in building end-to-end web applications
+  using React and Django. I help individuals, startups, and businesses turn ideas into
+  reliable, scalable products — from clean user interfaces to secure backend systems
+  and production-ready deployments.
+</p>
+
+<p className="text-light">
+  My work includes frontend development, REST API design, authentication, database
+  integration, and cloud deployment. I focus on writing clean, maintainable code and
+  delivering solutions that are practical, efficient, and user-focused.
+</p>
+
+
+
 </motion.div>
 
 
@@ -231,6 +248,12 @@ export default function Portfolio() {
       { name: "VS Code", icon: <VscVscode size={20} /> },
       { name: "PyCharm", icon: <SiPycharm size={20} /> },
       { name: "Postman", icon: <SiPostman size={20} /> },
+      { name: "AWS", icon: <FaAws size={20} /> },
+      { name: "Netlify", icon: <SiNetlify size={20} /> },
+      { name: "Render", icon: <SiRender size={20} /> },
+      { name: "Vercel", icon: <SiVercel size={20} /> },
+      { name: "Nginx", icon: <SiNginx size={20} /> },
+
     ].map((skill, i) => (
       <Col xs="auto" key={i}>
         <Badge
@@ -288,10 +311,19 @@ export default function Portfolio() {
             Nov 2024 – Present
           </Card.Subtitle>
           <Card.Text>
-            Worked using JavaScript, React, Python,
-            Django, MySQL, HTML, CSS and Bootstrap. Developed full-stack applications with JWT
-            authentication and REST APIs.
-          </Card.Text>
+  
+    • Developed full-stack web applications using <strong>React</strong> and
+      <strong> Django</strong>, following modern development practices <br/>
+    • Designed and implemented <strong>RESTful APIs</strong> for core application
+      features including authentication and data management. <br/>
+    • Implemented <strong>JWT-based authentication and authorization</strong> to
+      ensure secure user access and role-based permissions. <br/>
+    • Worked with <strong>MySQL and PostgreSQL</strong> for database design,
+      relationships, and backend integration. <br/>
+     •  Used <strong>Git and GitHub</strong> for version control and collaborated on
+      codebases using structured workflows. <br/>
+  
+</Card.Text>
         </Card.Body>
       </Card>
     </Col>
@@ -315,10 +347,16 @@ export default function Portfolio() {
             Sept 2023 – Nov 2024
           </Card.Subtitle>
           <Card.Text>
-            Designed and maintained client websites using HTML, CSS,
-            JavaScript, and React. Improved UI performance and SEO while collaborating
-            with small teams.
-          </Card.Text>
+      • Designed and developed responsive, SEO-friendly websites 
+      using HTML, CSS, JavaScript, and React. <br/>
+      • Worked directly with clients to understand requirements and deliver
+      end-to-end solutions. <br/>
+      • Focused on UI/UX quality, performance optimization, and
+      cross-browser compatibility. <br/>
+      • Handled project delivery from development to deployment, ensuring
+      reliable and maintainable outcomes. <br/>
+</Card.Text>
+
         </Card.Body>
       </Card>
     </Col>
@@ -345,26 +383,67 @@ export default function Portfolio() {
         title: "Hospital Management System (React + Django Full Stack)",
         github: "https://github.com/alwinjstanley/Hospital_Management",
         video: "https://youtu.be/UTepUEcdsy4?si=QZ9C0WGQivwIk4To",
-        desc: "JWT authentication, role-based permissions, REST APIs for patient registration, appointment scheduling, and Stripe payment integration."
+        desc:  [
+  <p> • Built a full-stack hospital management system using React for the frontend and Django for the backend <br/>
+     • Designed RESTful APIs to manage patients, appointments, and medical records <br/>
+   • Implemented JWT-based authentication and role-based access control for secure user management <br/>
+   • Integrated Stripe payment gateway for online billing and transaction handling  <br/>
+   • Ensured clean architecture, reusable components, and maintainable backend logic </p>
+]
       },
       {
         title: "E-Commerce Clothing Store – Attire",
         github: "https://github.com/alwinjstanley/ATTIRE-ECOM",
-        video: null,
-        desc: "Modern and responsive clothing store with clean UI, built using HTML, CSS, JavaScript, and Bootstrap."
+        video: "https://youtu.be/Zc_5BOlPmJA",
+        desc: <p>• Developed a modern and responsive e-commerce clothing website with a strong
+        focus on clean UI/UX.
+        <br />
+
+        • Built reusable frontend components using HTML, CSS, JavaScript, and
+        Bootstrap.
+        <br />
+
+        • Implemented product listing layouts and responsive design for multiple
+        screen sizes.
+        <br />
+
+        • Focused on performance, accessibility, and visual consistency.
+        </p>
       },
+      {
+  title: "Amaze Academy Website (Freelance Work)",
+  github: "https://theamazeacademy.com/",
+  video: null,
+  isLiveSite: true,
+  desc: (
+    <p>
+      • Contributed to the development of the Amaze Academy website as part of a collaborative freelance project.
+      <br />
+
+      • Developed responsive UI components to ensure compatibility across desktop, tablet, and mobile devices.
+      <br />
+
+      • Worked closely with team members to integrate frontend features with backend functionality.
+      <br />
+
+      • Focused on clean UI design, usability, and performance optimization for a production website.
+    </p>
+  )
+},
       {
         title: "Travel Company Website",
         github: "https://github.com/alwinjstanley/TRAVELS-UI",
         video: null,
-        desc: "Interactive travel website with destination showcases, smooth UI components, and responsive design."
-      },
-      {
-        title: "E-Commerce Website (Django + Stripe)",
-        github: null,
-        video: null,
-        desc: "User authentication, product management, shopping cart, and Stripe payment gateway integration."
-      }
+        desc: <p> • Designed and developed an interactive travel website showcasing destinations
+        and travel packages.
+        <br />
+
+        • Implemented responsive layouts and smooth UI interactions.
+        <br />
+
+        • Focused on visual appeal, usability, and mobile-first design principles.</p>}
+      
+
     ].map((p, i) => (
       <Col md={12} key={i}>
         <Card
@@ -391,16 +470,17 @@ export default function Portfolio() {
                 margin: "10px 0 15px 0",
               }}
             >
-              {p.github && (
-                <a
-                  href={p.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-icon"
-                >
-                  <FaGithub size={28} />
-                </a>
-              )}
+             {p.github && (
+  <a
+    href={p.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project-icon"
+  >
+    {p.isLiveSite ? <FaGlobe size={22} /> : <FaGithub size={22} />}
+  </a>
+)}
+
 
               {p.video && (
                 <a
@@ -409,7 +489,7 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className="project-icon"
                 >
-                  <FaYoutube size={32} />
+                  <FaYoutube size={26} />
                 </a>
               )}
             </div>
@@ -437,149 +517,81 @@ export default function Portfolio() {
   `}</style>
 </motion.div>
 
-{/* Career Summary */}
+{/* Call To Action */}
 <motion.div
-  id="summary"
-  className="mb-5"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.15 }}
+  id="contact"
+  className="text-center my-5 py-5"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  style={{
+    background: "rgba(255, 255, 255, 0.04)",
+    borderRadius: "20px",
+    border: "1px solid rgba(255,255,255,0.15)",
+    backdropFilter: "blur(6px)",
+  }}
 >
-  <h3 className="border-start border-4 ps-3 mb-3 text-primary">
-    Career Summary
-  </h3>
+  <h2 className="text-primary fw-bold mb-3">
+    Let’s Build Something Together
+  </h2>
 
-  <p className="text-light">
-    After my graduation, I dedicated time preparing for the 
-    <strong> UPSC Civil Services Examination</strong>, one of the toughest 
-    competitive exams in the world. This journey strengthened my analytical 
-    skills, sharpened my ability to learn quickly, and taught me how to stay 
-    focused and disciplined under pressure. As the popular saying about UPSC 
-    aspirants goes — <em>“A jack of all trades, master of none,”</em> — those 
-    years gave me broad knowledge and the ability to approach problems from 
-    multiple perspectives.
+  <p className="text-light mb-4" style={{ maxWidth: "700px", margin: "0 auto" }}>
+    I’m available for freelance projects, contract work, and full-time roles.
+    If you’re looking for someone who can design, develop, and deploy
+    reliable web applications, I’d love to collaborate.
   </p>
 
-  <p className="text-light">
-    Alongside my preparation, I worked as a <strong>freelance musician </strong>  
-     and contributed to our <strong>family business</strong>, gaining practical 
-    experience in communication, teamwork, leadership, and day-to-day 
-    operations. These roles helped shape my creativity and real-world 
-    understanding of how people and systems work.
-  </p>
 
-  <p className="text-light">
-    My interest in technology began in school, where I first explored 
-    programming and became fascinated by how code could bring ideas to life. 
-    Even during graduation, I stayed connected to programming through small 
-    experiments and online learning. That curiosity eventually grew into a 
-    clear direction and guided my transition into <strong>full stack 
-    development</strong>.
-  </p>
+  <div className="d-flex justify-content-center gap-3 flex-wrap">
 
-  <p className="text-light">
-    Today, I focus on building clean, functional, and scalable applications 
-    using modern technologies. I enjoy combining creativity with logic — 
-    whether it’s crafting intuitive user interfaces or developing efficient 
-    backend architectures. I’m constantly learning, improving, and working on 
-    projects that reflect my passion for problem-solving and meaningful, 
-    user-centric development.
-  </p>
+    <Button
+    variant="outline-primary"
+    href="https://www.linkedin.com/in/alwinjstanley/"
+    target="_blank"
+    style={{
+      padding: "10px 22px",
+      fontSize: "1rem",
+    }}
+  >
+    <FaLinkedin className="me-2" />
+    LinkedIn
+  </Button>
+  <Button
+    href="mailto:alwinstanley1@gmail.com"
+    style={{
+      background: "linear-gradient(45deg, #0d6efd, #6610f2)",
+      border: "none",
+      padding: "10px 22px",
+      fontSize: "1rem",
+    }}
+  >
+    <FaEnvelope className="me-2" />
+    Get in Touch
+  </Button>
+
+  <Button
+    variant="outline-primary"
+    href="tel:+919645964088"
+    style={{
+      padding: "10px 22px",
+      fontSize: "1rem",
+    }}
+  >
+    <FaPhone className="me-2" />
+    Call Me
+  </Button>
+
+  
+</div>
+<br/>
+ <p className="text-light">
+      <FaEnvelope className="me-2" /> alwinstanley1@gmail.com |{" "}
+      <FaPhone className="mx-2" /> +91 96459 64088
+    </p>
+
 </motion.div>
 
 
-        {/* Education */}
-<motion.div
-  id="education"
-  className="mb-5"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.65 }}
->
-  <h3 className="border-start border-4 ps-3 mb-4 text-primary">
-    Education
-  </h3>
-
-  <Row className="gy-4">
-
-    <Col md={12}>
-      <Card
-        className="shadow-sm border-0 hover-zoom"
-        style={{
-          borderRadius: "15px",
-          background: "rgba(255, 255, 255, 0.05)",
-          color: "#fff",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
-          backdropFilter: "blur(6px)",
-        }}
-      >
-        <Card.Body>
-          <Card.Title className="fw-bold text-info">
-            Bachelor of Arts — English Language & Literature
-          </Card.Title>
-          <Card.Subtitle className="mb-2 text-light">
-            Mar Ivanios College (Autonomous), Trivandrum  
-            <br /> University of Kerala
-          </Card.Subtitle>
-          <Card.Text>
-            Aggregate: <strong>80.2%</strong>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-
-    <Col md={12}>
-      <Card
-        className="shadow-sm border-0 hover-zoom"
-        style={{
-          borderRadius: "15px",
-          background: "rgba(255, 255, 255, 0.05)",
-          color: "#fff",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
-          backdropFilter: "blur(6px)",
-        }}
-      >
-        <Card.Body>
-          <Card.Title className="fw-bold text-info">
-            Higher Secondary Education (Science)
-          </Card.Title>
-          <Card.Subtitle className="mb-2 text-light">
-            Sacred Heart HSS, Kozhikode
-          </Card.Subtitle>
-          <Card.Text>
-            Aggregate: <strong>85.33%</strong>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-
-    <Col md={12}>
-      <Card
-        className="shadow-sm border-0 hover-zoom"
-        style={{
-          borderRadius: "15px",
-          background: "rgba(255, 255, 255, 0.05)",
-          color: "#fff",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
-          backdropFilter: "blur(6px)",
-        }}
-      >
-        <Card.Body>
-          <Card.Title className="fw-bold text-info">
-            Secondary School Leaving Certificate (SSLC)
-          </Card.Title>
-          <Card.Subtitle className="mb-2 text-light">
-            Infant Jesus EMS, Kozhikode
-          </Card.Subtitle>
-          <Card.Text>
-            Aggregate: <strong>95%</strong>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-
-  </Row>
-</motion.div>
 
 
  {/* Certifications & Achievements */}
@@ -591,17 +603,14 @@ export default function Portfolio() {
   transition={{ delay: 0.6 }}
 >
   <h3 className="border-start border-4 ps-3 mb-4 text-primary">
-    Certifications & Achievements
+    Certifications & Other Achievements
   </h3>
 
   <Row className="gy-4">
 
     {/* Certifications */}
     {[
-      {
-        title: "Python Full Stack Development Certificate",
-        desc: "Techolas Technologies, Kochi",
-      },
+      
       {
         title: "National Council for Technology and Training (NACTET)",
         desc: "Python Full Stack Development",
@@ -613,6 +622,10 @@ export default function Portfolio() {
       {
         title: "IELTS – Overall 8.0 Band (No band below 7)",
         desc: "Cambridge University",
+      },
+      {
+        title: "Python Full Stack Development Certificate",
+        desc: "Techolas Technologies, Kochi",
       }
     ].map((item, i) => (
       <Col md={12} key={i}>
@@ -653,7 +666,7 @@ export default function Portfolio() {
             Kerala PSC Rank Holder
           </Card.Title>
           <Card.Text>
-            Ranked for the post of Assistant, Kerala Administrative Tribunal (KAT).
+             Assistant, Kerala Administrative Tribunal (KAT).
           </Card.Text>
         </Card.Body>
       </Card>
@@ -672,9 +685,9 @@ export default function Portfolio() {
         }}
       >
         <Card.Body>
-          <Card.Title className="fw-bold text-info">Music Performance</Card.Title>
+          <Card.Title className="fw-bold text-info">Freelance Musician</Card.Title>
           <Card.Text>
-            Professional keyboard artist; performed with various playback singers, and has extensive live stage experience.
+            Skilled in Piano and Drums; performed with various playback singers and artists.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -692,15 +705,6 @@ export default function Portfolio() {
           backdropFilter: "blur(6px)",
         }}
       >
-        <Card.Body>
-          <Card.Title className="fw-bold text-info">
-            Arts Fest & Orchestra Awards
-          </Card.Title>
-          <Card.Text>
-            2× Second Prize in ‘Orchestra’ – Inter-College Arts Fest, University of Kerala.  
-            Also represented at the 55th Kerala State School Arts Festival (Keyboard – Orchestra).
-          </Card.Text>
-        </Card.Body>
       </Card>
     </Col>
 
@@ -816,5 +820,6 @@ export default function Portfolio() {
   );
 
 }
+
 
 
