@@ -88,7 +88,7 @@ export default function NavBarComponent() {
               { id: "skills", label: "Skills" },
               { id: "experience", label: "Experiences" },
               { id: "projects", label: "Projects" },
-              { id: "contact", label: "Contact Me" },
+              { id: "contact", label: "Connect" },
               { id: "certifications", label: "Certifications" },
             ].map((item) => (
               <Nav.Link
@@ -134,3 +134,4 @@ export default function NavBarComponent() {
     </RBNavbar>
   );
 }
+
